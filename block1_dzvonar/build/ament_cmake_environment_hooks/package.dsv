@@ -1,0 +1,4 @@
+source;share/block1_dzvonar/local_setup.bash
+source;share/block1_dzvonar/local_setup.dsv
+source;share/block1_dzvonar/local_setup.sh
+source;share/block1_dzvonar/local_setup.zsh
