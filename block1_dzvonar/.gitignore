@@ -1,1 +1,15 @@
+# ROS 2 Build folders
 build/
+install/
+log/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# IDE specific folders (optional but recommended)
+.vscode/
+.idea/
+
+# User-specific configuration
+.DS_Store
