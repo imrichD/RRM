@@ -116,22 +116,15 @@ void Teleop::run_menu()
     }
 
     if (choice == 'm') {
-      double j1, j2, j3, vel;
-      std::cout << "Positions j1 j2 j3 (napr: 1.0 -0.5 2.5): ";
-      if (!(std::cin >> j1 >> j2 >> j3)) {
+      double j1, j2, j3, j4, j5, j6, vel;
+      std::cout << "Positions j1 j2 j3 j4 j5 j6 (napr: 1.0 -0.5 2.5 0.0 0.0 0.0): ";
+      if (!(std::cin >> j1 >> j2 >> j3 >> j4 >> j5 >> j6 >> vel)) {
         std::cout << "[FAIL] Zly format, pouzij medzery medzi hodnotami\n";
         std::cin.clear();
         std::cin.ignore(1000, '\n');
         continue;
       }
-      std::cout << "Max velocity (napr: 0.5): ";
-      if (!(std::cin >> vel)) {
-        std::cout << "[FAIL] Zla hodnota velocity\n";
-        std::cin.clear();
-        std::cin.ignore(1000, '\n');
-        continue;
-      }
-      bool ok = move({j1, j2, j3}, vel);
+      bool ok = move({j1, j2, j3, j4, j5, j6}, vel);
       std::cout << (ok ? "[OK] Move done\n" : "[FAIL] Move failed\n");
 
     } else if (choice == 's') {

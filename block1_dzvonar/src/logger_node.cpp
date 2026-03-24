@@ -26,11 +26,11 @@ void JointLogger::teach_point_callback(
   const std::shared_ptr<dzvonar_interface::srv::TeachPoint::Request> request,
   std::shared_ptr<dzvonar_interface::srv::TeachPoint::Response> response)
 {
-  if (current_positions_.size() < 3) {
+  if (current_positions_.size() < 6) {
     response->result = false;
     response->message = "No joint state received yet";
     return;
-  }
+  } 
 
   try {
     save_teach_point(
