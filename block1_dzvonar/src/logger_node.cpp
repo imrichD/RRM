@@ -1,5 +1,6 @@
 #include "block1_Dzvonar/logger_node.hpp"
 #include "block1_Dzvonar/trajectory_io.hpp"
+#include <Eigen/Geometry>
 
 JointLogger::JointLogger() : Node("joint_logger")
 {
