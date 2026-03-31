@@ -12,6 +12,14 @@
   <depend>rclcpp</depend>
   <depend>rrm_msgs</depend>
   <depend>sensor_msgs</depend>
+  
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>dzvonar_interface</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>rrm_sim</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
@@ -20,3 +28,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+
