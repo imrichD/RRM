@@ -12,58 +12,69 @@
 void JointLogger::joint_states_callback(
   const sensor_msgs::msg::JointState::SharedPtr msg)
 {
-  if (msg->position.size() < 3) return;
-  this->current_positions_ = msg->position;
+  if (msg->position.size() < 3) {
+    RCLCPP_WARN(this->get_logger(), "Need at least 3 joint positions");
+    return;
+  }
 
-  double q1 = msg->position[0];
-  double q2 = msg->position[1];
-  double q3 = msg->position[2];
+  current_positions_ = msg->position;
 
-  // --- A1: Rotácia okolo Z (Joint 1) ---
-  Eigen::Matrix4d A1 = Eigen::Matrix4d::Identity();
-  A1 << cos(q1), -sin(q1), 0, 0,
-        sin(q1),  cos(q1), 0, 0,
-        0,        0,       1, 0,
-        0,        0,       0, 1;
+  const double q1 = msg->position[0];
+  const double q2 = msg->position[1];
+  const double q3 = msg->position[2];
 
-  // --- A2: Rotácia okolo Y (Joint 2) ---
-  Eigen::Matrix4d A2 = Eigen::Matrix4d::Identity();
-  A2 << cos(q2),  0, sin(q2), 0,
-        0,        1, 0,       0,
-        -sin(q2), 0, cos(q2), 0,
-        0,        0, 0,       1;
+  constexpr double kPi = 3.14159265358979323846;
 
-  // --- A3: Posun o 0.203 a rotácia okolo Y (Joint 3) ---
-  Eigen::Matrix4d A3 = Eigen::Matrix4d::Identity();
-  double d_arm = 0.203; // Dĺžka ramena z URDF
-  A3 << cos(q3),  0, sin(q3), 0,
-        0,        1, 0,       0,
-        -sin(q3), 0, cos(q3), d_arm,
-        0,        0, 0,       1;
+  auto dh_transform = [](double a, double alpha, double d,
+                         double theta) -> Eigen::Matrix4d {
+    const double ct = std::cos(theta);
+    const double st = std::sin(theta);
+    const double ca = std::cos(alpha);
+    const double sa = std::sin(alpha);
 
-  // --- A_tool: Posun na úplný koniec (Tool0) ---
-  Eigen::Matrix4d A_tool = Eigen::Matrix4d::Identity();
-  A_tool(2, 3) = 0.203; // Posledný kus ramena k tool0
+    Eigen::Matrix4d T = Eigen::Matrix4d::Identity();
+    T << ct, -st * ca, st * sa, a * ct,
+      st, ct * ca, -ct * sa, a * st,
+      0.0, sa, ca, d,
+      0.0, 0.0, 0.0, 1.0;
+    return T;
+  };
 
-  // Celkový výpočet: T = A1 * A2 * A3 * A_tool
-  Eigen::Matrix4d T = A1 * A2 * A3 * A_tool;
+  const double a1 = 0.0;
+  const double alpha1 = kPi / 2.0;
+  const double d1 = 0.25;
+  const double theta1 = q1;
 
-  // --- Odoslanie do TF ---
+  const double a2 = 0.4;
+  const double alpha2 = 0.0;
+  const double d2 = 0.0;
+  const double theta2 = q2;
+
+  const double a3 = 0.3;
+  const double alpha3 = 0.0;
+  const double d3 = 0.0;
+  const double theta3 = q3;
+
+  const Eigen::Matrix4d T =
+    dh_transform(a1, alpha1, d1, theta1) *
+    dh_transform(a2, alpha2, d2, theta2) *
+    dh_transform(a3, alpha3, d3, theta3);
+
   geometry_msgs::msg::TransformStamped t;
   t.header.stamp = this->now();
   t.header.frame_id = "base_link";
-  t.child_frame_id = "tool0_calculated";
-  
+  t.child_frame_id = "fk_end_effector";
+
   t.transform.translation.x = T(0, 3);
   t.transform.translation.y = T(1, 3);
   t.transform.translation.z = T(2, 3);
-  
-  Eigen::Quaterniond q_rot(T.block<3, 3>(0, 0));
+
+  const Eigen::Quaterniond q_rot(T.block<3, 3>(0, 0));
   t.transform.rotation.x = q_rot.x();
   t.transform.rotation.y = q_rot.y();
   t.transform.rotation.z = q_rot.z();
   t.transform.rotation.w = q_rot.w();
-  
+
   tf_broadcaster_->sendTransform(t);
 }
 
