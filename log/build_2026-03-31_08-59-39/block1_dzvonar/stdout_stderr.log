@@ -1,0 +1,40 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rrm_msgs: 0.0.0 (/home/imrich/ros2-ws-rrm/install/rrm_msgs/share/rrm_msgs/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found dzvonar_interface: 0.0.1 (/home/imrich/ros2-ws-rrm/install/dzvonar_interface/share/dzvonar_interface/cmake)
+-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar
+[ 16%] [32mBuilding CXX object CMakeFiles/trajectory_io.dir/src/trajectory_io.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libtrajectory_io.so[0m
+[ 33%] Built target trajectory_io
+[ 66%] [32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable teleop_node[0m
+[ 83%] Built target teleop_node
+[100%] [32m[1mLinking CXX executable logger_node[0m
+/usr/bin/ld: CMakeFiles/logger_node.dir/src/logger_node.cpp.o: in function `void std::_Construct<JointLogger>(JointLogger*)':
+logger_node.cpp:(.text._ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_[_ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_]+0x35): undefined reference to `JointLogger::JointLogger()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/logger_node.dir/build.make:225: logger_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/logger_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

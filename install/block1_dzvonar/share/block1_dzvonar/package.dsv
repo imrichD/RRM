@@ -1,0 +1,11 @@
+source;share/block1_dzvonar/hook/cmake_prefix_path.ps1
+source;share/block1_dzvonar/hook/cmake_prefix_path.dsv
+source;share/block1_dzvonar/hook/cmake_prefix_path.sh
+source;share/block1_dzvonar/hook/ld_library_path_lib.ps1
+source;share/block1_dzvonar/hook/ld_library_path_lib.dsv
+source;share/block1_dzvonar/hook/ld_library_path_lib.sh
+source;share/block1_dzvonar/local_setup.bash
+source;share/block1_dzvonar/local_setup.dsv
+source;share/block1_dzvonar/local_setup.ps1
+source;share/block1_dzvonar/local_setup.sh
+source;share/block1_dzvonar/local_setup.zsh

@@ -1,0 +1,2 @@
+Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4

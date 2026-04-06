@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libtrajectory_io.so -o libtrajectory_io.so CMakeFiles/trajectory_io.dir/src/trajectory_io.cpp.o 

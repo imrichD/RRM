@@ -1,0 +1,10 @@
+[ 33%] Built target trajectory_io
+[ 66%] Built target teleop_node
+[ 83%] [32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable logger_node[0m
+/usr/bin/ld: CMakeFiles/logger_node.dir/src/logger_node.cpp.o: in function `void std::_Construct<JointLogger>(JointLogger*)':
+logger_node.cpp:(.text._ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_[_ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_]+0x35): undefined reference to `JointLogger::JointLogger()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/logger_node.dir/build.make:225: logger_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/logger_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,404 @@
+[0.127s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'block1_dzvonar']
+[0.127s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['block1_dzvonar'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7cc67607ce90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cc67607cd10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cc67607cd10>>)
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.174s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/imrich/ros2-ws-rrm/src/RRM_JA'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(block1_dzvonar) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'block1_dzvonar' with type 'ros.ament_cmake' and name 'block1_dzvonar'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build) by extension 'python_setup_py'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'ros'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['cmake', 'python']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'cmake'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'ros'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['cmake', 'python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdC/tmp) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/3.28.3/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/CMakeScratch) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/build/dzvonar_interface/CMakeFiles/pkgRedirects) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['cmake', 'python']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'cmake'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(dzvonar_interface/install/dzvonar_interface/include/dzvonar_interface/dzvonar_interface/srv/detail/dds_fastrtps) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.317s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/imrich/ros2-ws-rrm/install
+[0.318s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install
+[0.324s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/jazzy
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'block1_dzvonar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'block1_dzvonar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar', 'merge_install': False, 'path': '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar', 'symlink_install': False, 'test_result_base': None}
+[0.394s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.395s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.395s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar' with build type 'ament_cmake'
+[0.395s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar'
+[0.398s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar -DCMAKE_INSTALL_PREFIX=/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar
+[2.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar -DCMAKE_INSTALL_PREFIX=/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar
+[2.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+[16.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+[16.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar
+[16.202s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(block1_dzvonar)
+[16.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar
+[16.206s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar' for CMake module files
+[16.207s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar' for CMake config files
+[16.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_dzvonar', 'cmake_prefix_path')
+[16.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.ps1'
+[16.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.dsv'
+[16.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.sh'
+[16.210s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib'
+[16.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_dzvonar', 'ld_library_path_lib')
+[16.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.ps1'
+[16.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.dsv'
+[16.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.sh'
+[16.211s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/bin'
+[16.211s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/pkgconfig/block1_dzvonar.pc'
+[16.212s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/python3.12/site-packages'
+[16.212s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/bin'
+[16.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.ps1'
+[16.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.dsv'
+[16.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.sh'
+[16.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.bash'
+[16.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.zsh'
+[16.216s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/colcon-core/packages/block1_dzvonar)
+[16.217s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(block1_dzvonar)
+[16.217s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar' for CMake module files
+[16.218s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar' for CMake config files
+[16.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_dzvonar', 'cmake_prefix_path')
+[16.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.ps1'
+[16.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.dsv'
+[16.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/cmake_prefix_path.sh'
+[16.219s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib'
+[16.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_dzvonar', 'ld_library_path_lib')
+[16.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.ps1'
+[16.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.dsv'
+[16.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/hook/ld_library_path_lib.sh'
+[16.221s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/bin'
+[16.221s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/pkgconfig/block1_dzvonar.pc'
+[16.221s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/python3.12/site-packages'
+[16.221s] Level 1:colcon.colcon_core.environment:checking '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/bin'
+[16.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.ps1'
+[16.222s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.dsv'
+[16.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.sh'
+[16.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.bash'
+[16.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.zsh'
+[16.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/colcon-core/packages/block1_dzvonar)
+[16.224s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.226s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.235s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.235s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.235s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.273s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.273s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/local_setup.ps1'
+[16.275s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/_local_setup_util_ps1.py'
+[16.277s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/setup.ps1'
+[16.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/local_setup.sh'
+[16.281s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/_local_setup_util_sh.py'
+[16.283s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/setup.sh'
+[16.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/local_setup.bash'
+[16.288s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/setup.bash'
+[16.292s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/local_setup.zsh'
+[16.293s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imrich/ros2-ws-rrm/src/RRM_JA/install/setup.zsh'

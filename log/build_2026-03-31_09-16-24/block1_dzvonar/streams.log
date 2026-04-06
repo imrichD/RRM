@@ -1,0 +1,85 @@
+[0.014s] Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar -DCMAKE_INSTALL_PREFIX=/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar
+[0.123s] -- The C compiler identification is GNU 13.3.0
+[0.228s] -- The CXX compiler identification is GNU 13.3.0
+[0.269s] -- Detecting C compiler ABI info
+[0.393s] -- Detecting C compiler ABI info - done
+[0.410s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.410s] -- Detecting C compile features
+[0.411s] -- Detecting C compile features - done
+[0.424s] -- Detecting CXX compiler ABI info
+[0.565s] -- Detecting CXX compiler ABI info - done
+[0.580s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.581s] -- Detecting CXX compile features
+[0.581s] -- Detecting CXX compile features - done
+[0.589s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.782s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.976s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.034s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.055s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.105s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.215s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.220s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.370s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.396s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.429s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.538s] -- Found rrm_msgs: 0.0.0 (/home/imrich/ros2-ws-rrm/install/rrm_msgs/share/rrm_msgs/cmake)
+[1.559s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.639s] -- Found dzvonar_interface: 0.0.1 (/home/imrich/ros2-ws-rrm/install/dzvonar_interface/share/dzvonar_interface/cmake)
+[1.662s] -- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.867s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.058s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.058s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/include>
+[2.059s] -- Configured cppcheck exclude dirs and/or files: 
+[2.063s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.064s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.073s] -- Added test 'lint_cmake' to check CMake code style
+[2.078s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.113s] -- Added test 'uncrustify' to check C / C++ code style
+[2.113s] -- Configured uncrustify additional arguments: 
+[2.118s] -- Added test 'xmllint' to check XML markup files
+[2.121s] -- Configuring done (2.1s)
+[2.153s] -- Generating done (0.0s)
+[2.161s] -- Build files have been written to: /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar
+[2.175s] Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar -DCMAKE_INSTALL_PREFIX=/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar
+[2.178s] Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+[2.250s] [ 16%] [32mBuilding CXX object CMakeFiles/trajectory_io.dir/src/trajectory_io.cpp.o[0m
+[2.775s] [ 33%] [32m[1mLinking CXX shared library libtrajectory_io.so[0m
+[2.912s] [ 33%] Built target trajectory_io
+[2.943s] [ 50%] [32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o[0m
+[2.944s] [ 66%] [32mBuilding CXX object CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o[0m
+[8.669s] [ 83%] [32m[1mLinking CXX executable teleop_node[0m
+[9.001s] [ 83%] Built target teleop_node
+[15.112s] [100%] [32m[1mLinking CXX executable logger_node[0m
+[15.731s] [100%] Built target logger_node
+[15.749s] Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+[15.773s] Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar
+[15.789s] -- Install configuration: ""
+[15.789s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include
+[15.790s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar
+[15.790s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/logger_node.hpp
+[15.790s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/teleop_node.hpp
+[15.791s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/trajectory_io.hpp
+[15.791s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/libtrajectory_io.so
+[15.791s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/teleop_node
+[15.792s] -- Set non-toolchain portion of runtime path of "/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/teleop_node" to ""
+[15.793s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/logger_node
+[15.799s] -- Set non-toolchain portion of runtime path of "/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/logger_node" to ""
+[15.799s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/launch
+[15.799s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/launch/task_1_6.launch.py
+[15.800s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/package_run_dependencies/block1_dzvonar
+[15.800s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/parent_prefix_path/block1_dzvonar
+[15.801s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/ament_prefix_path.sh
+[15.801s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/ament_prefix_path.dsv
+[15.801s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/path.sh
+[15.802s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/path.dsv
+[15.802s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.bash
+[15.803s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.sh
+[15.803s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.zsh
+[15.803s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.dsv
+[15.804s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.dsv
+[15.804s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/packages/block1_dzvonar
+[15.804s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/cmake/block1_dzvonarConfig.cmake
+[15.805s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/cmake/block1_dzvonarConfig-version.cmake
+[15.805s] -- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.xml
+[15.807s] Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar

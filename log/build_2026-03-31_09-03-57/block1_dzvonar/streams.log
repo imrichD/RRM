@@ -1,0 +1,12 @@
+[0.016s] Invoking command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4
+[0.091s] [ 33%] Built target trajectory_io
+[0.130s] [ 66%] Built target teleop_node
+[0.143s] [ 83%] [32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o[0m
+[4.939s] [100%] [32m[1mLinking CXX executable logger_node[0m
+[5.160s] /usr/bin/ld: CMakeFiles/logger_node.dir/src/logger_node.cpp.o: in function `void std::_Construct<JointLogger>(JointLogger*)':
+[5.161s] logger_node.cpp:(.text._ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_[_ZSt10_ConstructI11JointLoggerJEEvPT_DpOT0_]+0x35): undefined reference to `JointLogger::JointLogger()'
+[5.173s] collect2: error: ld returned 1 exit status
+[5.178s] gmake[2]: *** [CMakeFiles/logger_node.dir/build.make:225: logger_node] Error 1
+[5.178s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/logger_node.dir/all] Error 2
+[5.179s] gmake: *** [Makefile:146: all] Error 2
+[5.182s] Invoked command in '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar -- -j4 -l4

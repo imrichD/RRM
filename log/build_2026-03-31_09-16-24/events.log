@@ -1,0 +1,250 @@
+[0.000000] (-) TimerEvent: {}
+[0.001041] (block1_dzvonar) JobQueued: {'identifier': 'block1_dzvonar', 'dependencies': OrderedDict()}
+[0.001160] (block1_dzvonar) JobStarted: {'identifier': 'block1_dzvonar'}
+[0.012128] (block1_dzvonar) JobProgress: {'identifier': 'block1_dzvonar', 'progress': 'cmake'}
+[0.012792] (block1_dzvonar) Command: {'cmd': ['/usr/bin/cmake', '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar', '-DCMAKE_INSTALL_PREFIX=/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar'], 'cwd': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'imrich', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/imrich/ros2-ws-rrm/install/block1_dzvonar/lib:/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/imrich', 'OLDPWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2188', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'imrich', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'imrich', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/imrich-Lenovo-IdeaPad-S340-14API:@/tmp/.ICE-unix/2132,unix/imrich-Lenovo-IdeaPad-S340-14API:/tmp/.ICE-unix/2132', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dc1d956a_5240_476b_a3cb_ebe0f33c4d5f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.N6CZM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib/python3.12/site-packages:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099735] (-) TimerEvent: {}
+[0.123909] (block1_dzvonar) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199887] (-) TimerEvent: {}
+[0.229115] (block1_dzvonar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.270450] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300000] (-) TimerEvent: {}
+[0.393733] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.400110] (-) TimerEvent: {}
+[0.410603] (block1_dzvonar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.411158] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.411861] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.424868] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500232] (-) TimerEvent: {}
+[0.565526] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.581341] (block1_dzvonar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.581732] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.582379] (block1_dzvonar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.589843] (block1_dzvonar) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600332] (-) TimerEvent: {}
+[0.700643] (-) TimerEvent: {}
+[0.783005] (block1_dzvonar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800742] (-) TimerEvent: {}
+[0.901122] (-) TimerEvent: {}
+[0.976398] (block1_dzvonar) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.001231] (-) TimerEvent: {}
+[1.035109] (block1_dzvonar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.055384] (block1_dzvonar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.079224] (block1_dzvonar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101359] (-) TimerEvent: {}
+[1.106208] (block1_dzvonar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201472] (-) TimerEvent: {}
+[1.215822] (block1_dzvonar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.220766] (block1_dzvonar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.301590] (-) TimerEvent: {}
+[1.370977] (block1_dzvonar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.396704] (block1_dzvonar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.401652] (-) TimerEvent: {}
+[1.430164] (block1_dzvonar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.501775] (-) TimerEvent: {}
+[1.538542] (block1_dzvonar) StdoutLine: {'line': b'-- Found rrm_msgs: 0.0.0 (/home/imrich/ros2-ws-rrm/install/rrm_msgs/share/rrm_msgs/cmake)\n'}
+[1.560319] (block1_dzvonar) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.601892] (-) TimerEvent: {}
+[1.639910] (block1_dzvonar) StdoutLine: {'line': b'-- Found dzvonar_interface: 0.0.1 (/home/imrich/ros2-ws-rrm/install/dzvonar_interface/share/dzvonar_interface/cmake)\n'}
+[1.663247] (block1_dzvonar) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[1.702003] (-) TimerEvent: {}
+[1.802351] (-) TimerEvent: {}
+[1.867449] (block1_dzvonar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.902438] (-) TimerEvent: {}
+[2.002772] (-) TimerEvent: {}
+[2.058522] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.059042] (block1_dzvonar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/include>\n'}
+[2.059475] (block1_dzvonar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.064251] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.064723] (block1_dzvonar) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.073435] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.078586] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.102922] (-) TimerEvent: {}
+[2.113466] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.113808] (block1_dzvonar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.119328] (block1_dzvonar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.121992] (block1_dzvonar) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.154299] (block1_dzvonar) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.162291] (block1_dzvonar) StdoutLine: {'line': b'-- Build files have been written to: /home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar\n'}
+[2.175724] (block1_dzvonar) CommandEnded: {'returncode': 0}
+[2.177774] (block1_dzvonar) JobProgress: {'identifier': 'block1_dzvonar', 'progress': 'build'}
+[2.177867] (block1_dzvonar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', '--', '-j4', '-l4'], 'cwd': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'imrich', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/imrich/ros2-ws-rrm/install/block1_dzvonar/lib:/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/imrich', 'OLDPWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2188', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'imrich', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'imrich', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/imrich-Lenovo-IdeaPad-S340-14API:@/tmp/.ICE-unix/2132,unix/imrich-Lenovo-IdeaPad-S340-14API:/tmp/.ICE-unix/2132', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dc1d956a_5240_476b_a3cb_ebe0f33c4d5f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.N6CZM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib/python3.12/site-packages:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.203040] (-) TimerEvent: {}
+[2.251171] (block1_dzvonar) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_io.dir/src/trajectory_io.cpp.o\x1b[0m\n'}
+[2.303158] (-) TimerEvent: {}
+[2.403476] (-) TimerEvent: {}
+[2.503837] (-) TimerEvent: {}
+[2.604174] (-) TimerEvent: {}
+[2.704514] (-) TimerEvent: {}
+[2.775258] (block1_dzvonar) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libtrajectory_io.so\x1b[0m\n'}
+[2.804630] (-) TimerEvent: {}
+[2.904942] (-) TimerEvent: {}
+[2.913031] (block1_dzvonar) StdoutLine: {'line': b'[ 33%] Built target trajectory_io\n'}
+[2.943511] (block1_dzvonar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o\x1b[0m\n'}
+[2.945237] (block1_dzvonar) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o\x1b[0m\n'}
+[3.005061] (-) TimerEvent: {}
+[3.105378] (-) TimerEvent: {}
+[3.205691] (-) TimerEvent: {}
+[3.306035] (-) TimerEvent: {}
+[3.406415] (-) TimerEvent: {}
+[3.507195] (-) TimerEvent: {}
+[3.609511] (-) TimerEvent: {}
+[3.709988] (-) TimerEvent: {}
+[3.810364] (-) TimerEvent: {}
+[3.910871] (-) TimerEvent: {}
+[4.011240] (-) TimerEvent: {}
+[4.111649] (-) TimerEvent: {}
+[4.212002] (-) TimerEvent: {}
+[4.312373] (-) TimerEvent: {}
+[4.412688] (-) TimerEvent: {}
+[4.513044] (-) TimerEvent: {}
+[4.613399] (-) TimerEvent: {}
+[4.713790] (-) TimerEvent: {}
+[4.814176] (-) TimerEvent: {}
+[4.914526] (-) TimerEvent: {}
+[5.015981] (-) TimerEvent: {}
+[5.116352] (-) TimerEvent: {}
+[5.216675] (-) TimerEvent: {}
+[5.317042] (-) TimerEvent: {}
+[5.417411] (-) TimerEvent: {}
+[5.517802] (-) TimerEvent: {}
+[5.618180] (-) TimerEvent: {}
+[5.718681] (-) TimerEvent: {}
+[5.819052] (-) TimerEvent: {}
+[5.919609] (-) TimerEvent: {}
+[6.020306] (-) TimerEvent: {}
+[6.120705] (-) TimerEvent: {}
+[6.221064] (-) TimerEvent: {}
+[6.321431] (-) TimerEvent: {}
+[6.421830] (-) TimerEvent: {}
+[6.522241] (-) TimerEvent: {}
+[6.622780] (-) TimerEvent: {}
+[6.723141] (-) TimerEvent: {}
+[6.824901] (-) TimerEvent: {}
+[6.925266] (-) TimerEvent: {}
+[7.025645] (-) TimerEvent: {}
+[7.126002] (-) TimerEvent: {}
+[7.226362] (-) TimerEvent: {}
+[7.326757] (-) TimerEvent: {}
+[7.427188] (-) TimerEvent: {}
+[7.527616] (-) TimerEvent: {}
+[7.627971] (-) TimerEvent: {}
+[7.728309] (-) TimerEvent: {}
+[7.828668] (-) TimerEvent: {}
+[7.929027] (-) TimerEvent: {}
+[8.030667] (-) TimerEvent: {}
+[8.131021] (-) TimerEvent: {}
+[8.231403] (-) TimerEvent: {}
+[8.333822] (-) TimerEvent: {}
+[8.434161] (-) TimerEvent: {}
+[8.534517] (-) TimerEvent: {}
+[8.635835] (-) TimerEvent: {}
+[8.670202] (block1_dzvonar) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable teleop_node\x1b[0m\n'}
+[8.735974] (-) TimerEvent: {}
+[8.836341] (-) TimerEvent: {}
+[8.941090] (-) TimerEvent: {}
+[9.001660] (block1_dzvonar) StdoutLine: {'line': b'[ 83%] Built target teleop_node\n'}
+[9.041238] (-) TimerEvent: {}
+[9.141642] (-) TimerEvent: {}
+[9.242056] (-) TimerEvent: {}
+[9.342507] (-) TimerEvent: {}
+[9.443056] (-) TimerEvent: {}
+[9.543420] (-) TimerEvent: {}
+[9.643875] (-) TimerEvent: {}
+[9.744802] (-) TimerEvent: {}
+[9.845146] (-) TimerEvent: {}
+[9.945479] (-) TimerEvent: {}
+[10.045816] (-) TimerEvent: {}
+[10.146159] (-) TimerEvent: {}
+[10.246527] (-) TimerEvent: {}
+[10.346896] (-) TimerEvent: {}
+[10.447245] (-) TimerEvent: {}
+[10.547629] (-) TimerEvent: {}
+[10.648008] (-) TimerEvent: {}
+[10.748476] (-) TimerEvent: {}
+[10.849482] (-) TimerEvent: {}
+[10.949824] (-) TimerEvent: {}
+[11.050144] (-) TimerEvent: {}
+[11.150470] (-) TimerEvent: {}
+[11.250814] (-) TimerEvent: {}
+[11.351149] (-) TimerEvent: {}
+[11.451475] (-) TimerEvent: {}
+[11.551819] (-) TimerEvent: {}
+[11.652136] (-) TimerEvent: {}
+[11.752452] (-) TimerEvent: {}
+[11.852788] (-) TimerEvent: {}
+[11.953116] (-) TimerEvent: {}
+[12.053458] (-) TimerEvent: {}
+[12.153819] (-) TimerEvent: {}
+[12.254140] (-) TimerEvent: {}
+[12.354474] (-) TimerEvent: {}
+[12.454828] (-) TimerEvent: {}
+[12.555152] (-) TimerEvent: {}
+[12.655484] (-) TimerEvent: {}
+[12.755844] (-) TimerEvent: {}
+[12.856182] (-) TimerEvent: {}
+[12.956505] (-) TimerEvent: {}
+[13.056846] (-) TimerEvent: {}
+[13.157186] (-) TimerEvent: {}
+[13.257508] (-) TimerEvent: {}
+[13.357851] (-) TimerEvent: {}
+[13.458182] (-) TimerEvent: {}
+[13.558551] (-) TimerEvent: {}
+[13.659067] (-) TimerEvent: {}
+[13.759552] (-) TimerEvent: {}
+[13.860078] (-) TimerEvent: {}
+[13.960573] (-) TimerEvent: {}
+[14.061075] (-) TimerEvent: {}
+[14.161540] (-) TimerEvent: {}
+[14.262052] (-) TimerEvent: {}
+[14.362578] (-) TimerEvent: {}
+[14.463112] (-) TimerEvent: {}
+[14.563575] (-) TimerEvent: {}
+[14.664107] (-) TimerEvent: {}
+[14.764639] (-) TimerEvent: {}
+[14.865133] (-) TimerEvent: {}
+[14.965663] (-) TimerEvent: {}
+[15.066119] (-) TimerEvent: {}
+[15.113280] (block1_dzvonar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable logger_node\x1b[0m\n'}
+[15.166234] (-) TimerEvent: {}
+[15.266646] (-) TimerEvent: {}
+[15.367108] (-) TimerEvent: {}
+[15.467588] (-) TimerEvent: {}
+[15.567980] (-) TimerEvent: {}
+[15.668309] (-) TimerEvent: {}
+[15.732208] (block1_dzvonar) StdoutLine: {'line': b'[100%] Built target logger_node\n'}
+[15.749195] (block1_dzvonar) CommandEnded: {'returncode': 0}
+[15.750458] (block1_dzvonar) JobProgress: {'identifier': 'block1_dzvonar', 'progress': 'install'}
+[15.768429] (-) TimerEvent: {}
+[15.773303] (block1_dzvonar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar'], 'cwd': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'imrich', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/imrich/ros2-ws-rrm/install/block1_dzvonar/lib:/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/imrich', 'OLDPWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2188', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'imrich', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'imrich', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/imrich-Lenovo-IdeaPad-S340-14API:@/tmp/.ICE-unix/2132,unix/imrich-Lenovo-IdeaPad-S340-14API:/tmp/.ICE-unix/2132', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dc1d956a_5240_476b_a3cb_ebe0f33c4d5f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.N6CZM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.138', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/imrich/ros2-ws-rrm/src/RRM_JA/build/block1_dzvonar', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/imrich/ros2-ws-rrm/install/rrm_msgs/lib/python3.12/site-packages:/home/imrich/ros2-ws-rrm/install/dzvonar_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/imrich/ros2-ws-rrm/install/rrm_simple_robot_model:/home/imrich/ros2-ws-rrm/install/block1_dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_sim:/home/imrich/ros2-ws-rrm/install/block1_Dzvonar:/home/imrich/ros2-ws-rrm/install/rrm_msgs:/home/imrich/ros2-ws-rrm/install/dzvonar_interface:/home/imrich/ros2-ws-rrm/install/cv1:/home/imrich/ros2-ws-rrm/src/RRM_JA/block1_dzvonar/install/block1_dzvonar:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[15.789813] (block1_dzvonar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.790204] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include\n'}
+[15.790458] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar\n'}
+[15.790865] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/logger_node.hpp\n'}
+[15.791255] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/teleop_node.hpp\n'}
+[15.791673] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/include/block1_Dzvonar/trajectory_io.hpp\n'}
+[15.792010] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/libtrajectory_io.so\n'}
+[15.792333] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/teleop_node\n'}
+[15.793452] (block1_dzvonar) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/teleop_node" to ""\n'}
+[15.794250] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/logger_node\n'}
+[15.799900] (block1_dzvonar) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/lib/block1_dzvonar/logger_node" to ""\n'}
+[15.800227] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/launch\n'}
+[15.800457] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/launch/task_1_6.launch.py\n'}
+[15.800648] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/package_run_dependencies/block1_dzvonar\n'}
+[15.800946] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/parent_prefix_path/block1_dzvonar\n'}
+[15.801382] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/ament_prefix_path.sh\n'}
+[15.801838] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/ament_prefix_path.dsv\n'}
+[15.802232] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/path.sh\n'}
+[15.802649] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/environment/path.dsv\n'}
+[15.803066] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.bash\n'}
+[15.803494] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.sh\n'}
+[15.803945] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.zsh\n'}
+[15.804340] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/local_setup.dsv\n'}
+[15.804700] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.dsv\n'}
+[15.805048] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/ament_index/resource_index/packages/block1_dzvonar\n'}
+[15.805376] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/cmake/block1_dzvonarConfig.cmake\n'}
+[15.805723] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/cmake/block1_dzvonarConfig-version.cmake\n'}
+[15.806049] (block1_dzvonar) StdoutLine: {'line': b'-- Installing: /home/imrich/ros2-ws-rrm/src/RRM_JA/install/block1_dzvonar/share/block1_dzvonar/package.xml\n'}
+[15.807183] (block1_dzvonar) CommandEnded: {'returncode': 0}
+[15.830133] (block1_dzvonar) JobEnded: {'identifier': 'block1_dzvonar', 'rc': 0}
+[15.831363] (-) EventReactorShutdown: {}
