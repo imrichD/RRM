@@ -1,0 +1,8 @@
+float64 x
+float64 y
+float64 z
+---
+bool success
+string message
+float64[] joint_solutions
+uint8 solution_count

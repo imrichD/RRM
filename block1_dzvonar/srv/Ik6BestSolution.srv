@@ -1,0 +1,6 @@
+geometry_msgs/Pose target_pose
+float64[6] current_joints
+---
+bool success
+string message
+float64[6] joints

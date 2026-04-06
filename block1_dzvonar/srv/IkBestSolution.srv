@@ -1,0 +1,10 @@
+float64 x
+float64 y
+float64 z
+float64 current_j1
+float64 current_j2
+float64 current_j3
+---
+bool success
+string message
+float64[3] joints
