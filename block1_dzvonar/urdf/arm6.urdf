@@ -50,9 +50,9 @@
 
   <link name="link_4">
     <visual>
-      <geometry><cylinder length="0.05" radius="0.01"/></geometry>
+      <geometry><cylinder length="0.03" radius="0.01"/></geometry>
       <material name="white"><color rgba="1 1 1 1"/></material>
-      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <origin xyz="0 0 0.015" rpy="0 0 0"/>
     </visual>
   </link>
 
@@ -73,11 +73,6 @@
   </link>
 
   <link name="link_6">
-    <visual>
-      <geometry><cylinder length="0.12" radius="0.005"/></geometry>
-      <material name="gray"><color rgba="0.2 0.2 0.2 1"/></material>
-      <origin xyz="0 0 -0.06" rpy="0 0 0"/>
-    </visual>
     <visual>
       <geometry><sphere radius="0.01"/></geometry>
       <material name="gray"><color rgba="0.2 0.2 0.2 1"/></material>

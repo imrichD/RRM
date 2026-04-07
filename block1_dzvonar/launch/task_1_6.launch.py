@@ -7,21 +7,8 @@ from launch.actions import ExecuteProcess, LogInfo, OpaqueFunction, TimerAction
 from launch_ros.actions import Node
 
 
-def _clean_gui_env():
-    env = os.environ.copy()
-    for key in ["GTK_PATH", "GTK_EXE_PREFIX", "GTK_IM_MODULE_FILE", "GIO_MODULE_DIR", "GSETTINGS_SCHEMA_DIR", "LOCPATH", "LD_PRELOAD"]:
-        env.pop(key, None)
-
-    for key in ["PATH", "XDG_DATA_DIRS", "LD_LIBRARY_PATH"]:
-        value = env.get(key, "")
-        if value:
-            env[key] = ":".join([p for p in value.split(":") if "/snap/" not in p])
-    return env
-
-
 def _client_terminal_action(_context):
     client_cmd = "source /opt/ros/jazzy/setup.bash && ros2 run block1_dzvonar cartesian_control_client; exec bash"
-    gui_env = _clean_gui_env()
 
     terminals = [
         ("gnome-terminal", ["gnome-terminal", "--", "bash", "-lc", client_cmd]),
@@ -34,7 +21,7 @@ def _client_terminal_action(_context):
         if shutil.which(name):
             return [
                 LogInfo(msg=f"Opening interactive client in {name}..."),
-                ExecuteProcess(cmd=command, output="screen", env=gui_env),
+                ExecuteProcess(cmd=command, output="screen"),
             ]
 
     return [
@@ -54,7 +41,6 @@ def generate_launch_description():
 
     with open(robot_description_path, "r", encoding="utf-8") as urdf_file:
         robot_description = urdf_file.read()
-    gui_env = _clean_gui_env()
 
     return LaunchDescription([
         Node(
@@ -88,10 +74,12 @@ def generate_launch_description():
             name="motion_manager",
             output="screen",
         ),
-        ExecuteProcess(
-            cmd=["rviz2", "-d", rviz_config_path],
+        Node(
+            package="rviz2",
+            executable="rviz2",
+            name="rviz2",
             output="screen",
-            env=gui_env,
+            arguments=[rviz_config_path],
         ),
         TimerAction(
             period=2.0,
