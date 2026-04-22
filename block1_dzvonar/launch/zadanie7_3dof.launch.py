@@ -35,9 +35,11 @@ def _client_terminal_action(_context):
 
 
 def generate_launch_description():
-    package_share = get_package_share_directory("block1_dzvonar")
-    robot_description_path = os.path.join(package_share, "urdf", "arm6.urdf")
-    rviz_config_path = os.path.join(package_share, "rviz", "task_1_6.rviz")
+    robot_model_share = get_package_share_directory("rrm_simple_robot_model")
+    block1_share = get_package_share_directory("block1_dzvonar")
+
+    robot_description_path = os.path.join(robot_model_share, "urdf", "arm.urdf")
+    rviz_config_path = os.path.join(block1_share, "rviz", "task_1_6.rviz")
 
     with open(robot_description_path, "r", encoding="utf-8") as urdf_file:
         robot_description = urdf_file.read()

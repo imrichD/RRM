@@ -248,7 +248,13 @@ void MotionManagerNode::move_cartesian_callback(
     return;
   }
 
-  if (!execute_move_command(std::vector<double>{target_joints[0], target_joints[1], target_joints[2]}, message)) {
+  const auto current_positions = current_joint_positions_snapshot();
+  std::vector<double> full_command(current_positions.size(), 0.0);
+  for (std::size_t i = 0; i < full_command.size(); ++i) {
+    full_command[i] = i < 3 ? target_joints[i] : current_positions[i];
+  }
+
+  if (!execute_move_command(full_command, message)) {
     response->success = false;
     response->message = message;
     return;
@@ -262,7 +268,9 @@ int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<MotionManagerNode>();
-  rclcpp::spin(node);
+  rclcpp::executors::MultiThreadedExecutor executor;
+  executor.add_node(node);
+  executor.spin();
   rclcpp::shutdown();
   return 0;
 }

@@ -14,9 +14,9 @@ namespace
 {
 constexpr double kPi = 3.14159265358979323846;
 constexpr double kTwoPi = 2.0 * kPi;
-constexpr double kLink1Offset = 0.25;
-constexpr double kLink2Length = 0.4;
-constexpr double kLink3Length = 0.3;
+constexpr double kLink1Offset = 0.0;
+constexpr double kLink2Length = 0.203;
+constexpr double kLink3Length = 0.203;
 constexpr double kArm6Link2ToJoint3 = 0.203;
 constexpr double kArm6Joint3ToWrist = 0.203;
 constexpr double kArm6ToolOffset = 0.12;
@@ -262,7 +262,7 @@ std::vector<IkSolverNode::CandidateSolution> IkSolverNode::compute_solutions(
     return solutions;
   }
 
-  const double rho = std::hypot(x, y);
+  const double rho = std::hypot(x, y); // Hypot pocita preponu, ano zacal som velkym pismenom. Ano som v strese
   const double z_offset = z - kLink1Offset;
   const double base_angle = std::atan2(y, x);
 
@@ -461,13 +461,14 @@ std::vector<IkSolverNode::CandidateSolution6> IkSolverNode::compute_solutions_6d
     return solutions;
   }
 
+  //tu vyberam z stlpec z rotacnej matice. (decoupling)
   const std::array<double, 3> z_tool{{rotation_06[0][2], rotation_06[1][2], rotation_06[2][2]}};
   const std::array<double, 3> wrist_center{{
     target_pose.position.x - kArm6ToolOffset * z_tool[0],
     target_pose.position.y - kArm6ToolOffset * z_tool[1],
     target_pose.position.z - kArm6ToolOffset * z_tool[2]
   }};
-
+//
   const double rho = std::hypot(wrist_center[0], wrist_center[1]);
   const double z_offset = wrist_center[2];
   const double base_angle = std::atan2(wrist_center[1], wrist_center[0]);
